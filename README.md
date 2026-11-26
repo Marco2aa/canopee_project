@@ -6,7 +6,7 @@ Le kit doit permettre aux enseignants de proposer des activités de découverte 
 
 ![Tartaruga, le robot tortue imprimable du projet](images/tartaruga_1_heros.png)
 
-🎬 **[Voir la vidéo : Tartaruga dessine une étoile](videos/tartaruga_dessine_une_etoile.mp4)**
+🎬 **[Vidéo de présentation du projet (47 s)](videos/tartaruga_presentation.mp4)** · **[Tartaruga dessine une étoile (23 s)](videos/tartaruga_dessine_une_etoile.mp4)**
 
 ## Étapes du projet
 
@@ -33,7 +33,7 @@ Le kit doit permettre aux enseignants de proposer des activités de découverte 
 |---|---|---|
 | 1. Comprendre le besoin | questions prêtes, réponses de Canopé attendues | [Questions de recherche pour le Réseau Canopé](docs/questions-recherche-canope.md) |
 | 2-3. Recherches et veille | cartes, solutions existantes, énergie, matériaux et programmation faits | [Cartes électroniques](docs/veille-cartes-electroniques.md) · [Solutions existantes](docs/veille-solutions-existantes.md) · [Énergie, matériaux et programmation](docs/veille-energie-materiaux-programmation.md) |
-| 4. Concepts | un robot conçu (Tartaruga) ; autres robots et mallette à faire | [Tartaruga : robot tortue imprimable en 3D](modeles-3d/README.md) |
+| 4. Concepts | un robot conçu (Tartaruga) ; autres robots et mallette à faire | [Tartaruga : robot tortue imprimable en 3D](modeles-3d/README.md) · [Pistes pour l'intelligence artificielle](docs/pistes-ia.md) |
 | 5. Comparaison | chiffrage fait ; grille de comparaison à faire | [Chiffrage d'un kit pour une classe](docs/chiffrage-kit-classe.md) |
 | 6. Finalisation | protocole de test prêt, prototype à imprimer | [Protocole de test du prototype](docs/protocole-tests-prototype.md) · [Programme de calibrage et fiche d'activité](programmes/README.md) |
 
@@ -48,17 +48,20 @@ canopee_project/
 │   ├── veille-solutions-existantes.md
 │   ├── veille-energie-materiaux-programmation.md
 │   ├── chiffrage-kit-classe.md
-│   └── protocole-tests-prototype.md
+│   ├── protocole-tests-prototype.md
+│   └── pistes-ia.md
 ├── modeles-3d/                robot Tartaruga
 │   ├── README.md              présentation, pièces, matériel, coût, montage
 │   ├── tartaruga_*.stl        5 pièces à imprimer, déjà orientées
 │   ├── tartaruga.blend        modèle Blender complet
-│   └── tartaruga_animation.blend   scène de la vidéo
+│   ├── tartaruga_animation.blend   scène de la vidéo de l'étoile
+│   └── tartaruga_presentation.blend   scène de la vidéo de présentation
 ├── programmes/                programmes MakeCode pour le micro:bit
 │   ├── README.md              mode d'emploi et fiche d'activité
 │   └── calibrage.ts
 ├── images/                    rendus 3D de présentation
-├── videos/                    vidéo de démonstration
+├── videos/                    vidéos de démonstration et de présentation
+│   └── creer_video_presentation.py   script Blender qui construit la vidéo de présentation
 ├── .mcp.json                  connexion entre Claude Code et Blender
 └── .gitignore                 fichiers que Git ignore (sauvegardes de Blender…)
 ```
