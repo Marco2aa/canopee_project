@@ -27,14 +27,41 @@ Le kit doit permettre aux enseignants de proposer des activités de découverte 
 | Pédagogie | Comment rendre la robotique accessible aux élèves et aux enseignants ? |
 | Autonomie | Comment utiliser le kit sans matériel coûteux ni connaissances techniques avancées ? |
 
-## Documents
+## Où en est le projet ?
 
-- [Questions de recherche pour le Réseau Canopé](docs/questions-recherche-canope.md)
-- [Veille : cartes électroniques](docs/veille-cartes-electroniques.md)
-- [Veille : solutions existantes](docs/veille-solutions-existantes.md)
-- [Chiffrage d'un kit pour une classe](docs/chiffrage-kit-classe.md)
-- [Programme de calibrage et fiche d'activité](programmes/README.md)
-- [Tartaruga : robot tortue imprimable en 3D](modeles-3d/README.md)
+| Étape | État | Documents |
+|---|---|---|
+| 1. Comprendre le besoin | questions prêtes, réponses de Canopé attendues | [Questions de recherche pour le Réseau Canopé](docs/questions-recherche-canope.md) |
+| 2-3. Recherches et veille | cartes, solutions existantes, énergie, matériaux et programmation faits | [Cartes électroniques](docs/veille-cartes-electroniques.md) · [Solutions existantes](docs/veille-solutions-existantes.md) · [Énergie, matériaux et programmation](docs/veille-energie-materiaux-programmation.md) |
+| 4. Concepts | un robot conçu (Tartaruga) ; autres robots et mallette à faire | [Tartaruga : robot tortue imprimable en 3D](modeles-3d/README.md) |
+| 5. Comparaison | chiffrage fait ; grille de comparaison à faire | [Chiffrage d'un kit pour une classe](docs/chiffrage-kit-classe.md) |
+| 6. Finalisation | protocole de test prêt, prototype à imprimer | [Protocole de test du prototype](docs/protocole-tests-prototype.md) · [Programme de calibrage et fiche d'activité](programmes/README.md) |
+
+## Plan du dépôt
+
+```
+canopee_project/
+├── README.md                  ce fichier
+├── docs/                      documents de recherche, de veille et de chiffrage
+│   ├── questions-recherche-canope.md
+│   ├── veille-cartes-electroniques.md
+│   ├── veille-solutions-existantes.md
+│   ├── veille-energie-materiaux-programmation.md
+│   ├── chiffrage-kit-classe.md
+│   └── protocole-tests-prototype.md
+├── modeles-3d/                robot Tartaruga
+│   ├── README.md              présentation, pièces, matériel, coût, montage
+│   ├── tartaruga_*.stl        5 pièces à imprimer, déjà orientées
+│   ├── tartaruga.blend        modèle Blender complet
+│   └── tartaruga_animation.blend   scène de la vidéo
+├── programmes/                programmes MakeCode pour le micro:bit
+│   ├── README.md              mode d'emploi et fiche d'activité
+│   └── calibrage.ts
+├── images/                    rendus 3D de présentation
+├── videos/                    vidéo de démonstration
+├── .mcp.json                  connexion entre Claude Code et Blender
+└── .gitignore                 fichiers que Git ignore (sauvegardes de Blender…)
+```
 
 ## Modélisation 3D (Blender)
 

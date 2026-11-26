@@ -32,7 +32,9 @@ Les fichiers STL sont déjà orientés pour l'impression. Toutes les pièces tie
 | `tartaruga_support_leve_stylo.stl` | 56 × 38,5 × 15 | posé sur sa base | non |
 | `tartaruga_bague_feutre.stl` | 23 × 40 × 8 | posée à plat | non |
 
-**Réglages conseillés :** PLA ou PETG, buse de 0,4 mm, couches de 0,2 mm, 3 périmètres, remplissage de 20 %. Pour le châssis, 4 périmètres rendent les berceaux moteurs plus solides.
+**Matériau conseillé : PETG**, pour le châssis, la carapace, le support du servo et la bague. Le PLA commence à se ramollir vers 50 à 60 °C, une température qu'une voiture au soleil peut atteindre en été. Le PLA convient en revanche aux couvercles personnalisés par les élèves. Voir la [veille sur les matériaux](../docs/veille-energie-materiaux-programmation.md).
+
+**Réglages conseillés :** buse de 0,4 mm, couches de 0,2 mm, 3 périmètres, remplissage de 20 %. Pour le châssis, 4 périmètres rendent les berceaux moteurs plus solides.
 
 `tartaruga.blend` contient le modèle complet, avec les composants de référence (moteurs, roues, piles, carte) dans une collection à part.
 
