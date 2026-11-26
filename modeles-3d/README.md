@@ -2,6 +2,14 @@
 
 Robot inspiré de la **tortue d'Hermann**, une espèce emblématique de Corse. Il est conçu pour le **micro:bit V2** avec une carte d'extension robot, et se programme en blocs de style Scratch (MakeCode, Vittascience), du CM2 à la 5e.
 
+![Tartaruga, le robot tortue, devant l'étoile qu'il vient de dessiner](../images/tartaruga_1_heros.png)
+
+| Elle dessine | On voit l'intérieur | On personnalise sa carapace |
+|---|---|---|
+| ![Vue de dessus : l'étoile tracée au feutre](../images/tartaruga_2_dessin.png) | ![Vue éclatée : couvercle et carapace soulevés](../images/tartaruga_3_interieur.png) | ![Trois tortues aux carapaces de couleurs différentes](../images/tartaruga_4_famille.png) |
+
+*Rendus 3D réalisés dans Blender. L'électronique (moteurs, carte, micro:bit) y est simplifiée.*
+
 ## Ce qui le rend ludique
 
 - **Elle dessine.** Un feutre se place au centre, entre les deux roues. La tortue trace ses déplacements comme la tortue du langage Logo : carré, triangle, étoile… C'est de la géométrie de cycle 3 et 4.
