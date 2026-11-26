@@ -20,7 +20,7 @@
 
 **Ce qu'on retient :**
 - Les robots les plus simples (Blue-Bot) s'adressent aux plus jeunes. Pour le CM2 et la 5e, ce sont plutôt **mBot, Thymio ou les robots micro:bit** qui conviennent.
-- Les robots micro:bit du commerce (Maqueen, Cutebot) coûtent environ **70 € une fois le micro:bit ajouté**. C'est assez proche de la version « de marque » de Tartaruga (≈ 60 € avec le lève-stylo) : **l'avantage de prix de Tartaruga est réel mais modeste** face à eux. Il est beaucoup plus net face au Blue-Bot, au Thymio ou au mBot2.
+- Les robots micro:bit du commerce (Maqueen, Cutebot) coûtent environ **70 € une fois le micro:bit ajouté**. C'est assez proche de la version « de marque » de Tartaruga (≈ 63 € avec le lève-stylo) : **l'avantage de prix de Tartaruga est réel mais modeste** face à eux. Il est beaucoup plus net face au Blue-Bot, au Thymio ou au mBot2.
 - Aucun de ces robots ne se **répare en imprimant une pièce** : une coque cassée oblige à racheter la pièce chez le fabricant, ou le robot entier.
 
 ---
@@ -63,7 +63,7 @@ L'idée d'un robot qui trace des figures avec un feutre **n'est pas nouvelle**. 
 
 | Critère | Blue-Bot | Thymio | mBot2 | Robot micro:bit du commerce | Tortue libre (OSTR) | **Tartaruga** |
 |---|---|---|---|---|---|---|
-| Prix par robot | ≈ 120-140 € | ≈ 100 € et plus | ≈ 155 € | ≈ 70 € | faible (à chiffrer) | **≈ 43 à 60 €** |
+| Prix par robot | ≈ 120-140 € | ≈ 100 € et plus | ≈ 155 € | ≈ 70 € | faible (à chiffrer) | **≈ 43 à 63 €** |
 | Adapté du CM2 à la 5e | non | oui | oui | oui | moyen | **oui** |
 | Blocs de style Scratch | non | oui | oui | oui | non | **oui** (MakeCode, Vittascience) |
 | Aucun logiciel à installer | oui | non | non | oui | non | **oui** |

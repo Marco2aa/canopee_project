@@ -62,17 +62,19 @@ Estimation faite en novembre 2026, à partir de prix relevés en ligne, TTC. **L
 | micro:bit V2 (prix en pack de 10) | 20 € | 20 € |
 | Carte d'extension moteur | 15 € (Kitronik) | 8 € (générique) |
 | 2 moteurs TT avec roues de 65 mm | 11 € | 5 € |
-| Micro-servomoteur SG90 (lève-stylo) | 3 € | 2 € |
+| Micro-servomoteur SG90 (lève-stylo) | 6 € (à l'unité) | 1,80 € (en lot de 10) |
 | Boîtier 4 piles AA et 4 piles alcalines | 4,50 € | 3 € |
 | 12 aimants néodyme 6 × 3 mm | 1,50 € | 1 € |
 | Vis, entretoises, colliers | 1,20 € | 0,70 € |
 | Feutre | 1 € | 0,50 € |
 | Filament PLA (≈ 135 g à 20 €/kg) | 2,70 € | 2,70 € |
-| **Total par robot** | **≈ 60 €** | **≈ 43 €** |
+| **Total par robot** | **≈ 63 €** | **≈ 43 €** |
+
+Pour le coût d'un kit complet pour une classe (8 ou 12 robots, rechanges, mallette), voir le [chiffrage du kit de classe](../docs/chiffrage-kit-classe.md).
 
 **D'où viennent les chiffres :**
 - **Filament :** le châssis, la carapace et le couvercle font 135 cm³ s'ils étaient pleins (mesuré dans Blender). Avec 20 % de remplissage et des parois fines, il faut compter environ 110 à 130 g de PLA, plus une dizaine de grammes pour le support du servo et la bague.
-- **Servomoteur SG90 :** prix courant estimé, pas encore relevé chez un revendeur.
+- **Servomoteur SG90 :** environ 5 à 6 € à l'unité chez un revendeur français, environ 1,80 € pièce en lot de 10 ([RS France](https://befr.rs-online.com/web/p/stem-motion-components/2153180), [lot de 10](https://www.fruugo.fr/lot-de-10-servomoteurs-micro-servo-sg90-9g-pour-avion-180%25C2%25B0/p-364895706)).
 - **Temps d'impression :** environ 8 h par robot. C'est une estimation, à confirmer avec le logiciel d'impression (le « slicer »).
 
 **Ce qui n'est pas compté :**
