@@ -6,6 +6,8 @@ Le kit doit permettre aux enseignants de proposer des activités de découverte 
 
 ![Tartaruga, le robot tortue imprimable du projet](images/tartaruga_1_heros.png)
 
+🎬 **[Voir la vidéo : Tartaruga dessine une étoile](videos/tartaruga_dessine_une_etoile.mp4)**
+
 ## Étapes du projet
 
 1. **Comprendre le besoin** : étudier les écoles corses, les contraintes des enseignants et les besoins des élèves.

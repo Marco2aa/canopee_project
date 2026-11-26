@@ -10,6 +10,8 @@ Robot inspiré de la **tortue d'Hermann**, une espèce emblématique de Corse. I
 
 *Rendus 3D réalisés dans Blender. L'électronique (moteurs, carte, micro:bit) y est simplifiée.*
 
+🎬 **[Voir la vidéo : Tartaruga dessine une étoile](../videos/tartaruga_dessine_une_etoile.mp4)** (23 s). La tortue trace une étoile à 5 branches, lève son stylo, puis repart avec un cœur sur son visage de LED. Le fichier `tartaruga_animation.blend` permet de refaire ce rendu.
+
 ## Ce qui le rend ludique
 
 - **Elle dessine.** Un feutre se place au centre, entre les deux roues. La tortue trace ses déplacements comme la tortue du langage Logo : carré, triangle, étoile… C'est de la géométrie de cycle 3 et 4.
