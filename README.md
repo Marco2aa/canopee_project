@@ -6,7 +6,7 @@ Le kit doit permettre aux enseignants de proposer des activités de découverte 
 
 ![Tartaruga, le robot tortue imprimable du projet](images/tartaruga_1_heros.png)
 
-🎬 **[Vidéo de présentation du projet (47 s)](videos/tartaruga_presentation.mp4)** · **[Tartaruga dessine une étoile (23 s)](videos/tartaruga_dessine_une_etoile.mp4)**
+🎬 **[Vidéo de présentation du projet (47 s)](videos/tartaruga_presentation.mp4)** · **[Tartaruga apprend : 4 activités d'IA (66 s)](videos/tartaruga_ia.mp4)** · **[Tartaruga dessine une étoile (23 s)](videos/tartaruga_dessine_une_etoile.mp4)**
 
 ## Étapes du projet
 
@@ -55,13 +55,15 @@ canopee_project/
 │   ├── tartaruga_*.stl        5 pièces à imprimer, déjà orientées
 │   ├── tartaruga.blend        modèle Blender complet
 │   ├── tartaruga_animation.blend   scène de la vidéo de l'étoile
-│   └── tartaruga_presentation.blend   scène de la vidéo de présentation
+│   ├── tartaruga_presentation.blend   scène de la vidéo de présentation
+│   └── tartaruga_ia.blend     scène de la vidéo sur l'IA
 ├── programmes/                programmes MakeCode pour le micro:bit
 │   ├── README.md              mode d'emploi et fiche d'activité
 │   └── calibrage.ts
 ├── images/                    rendus 3D de présentation
 ├── videos/                    vidéos de démonstration et de présentation
-│   └── creer_video_presentation.py   script Blender qui construit la vidéo de présentation
+│   ├── creer_video_presentation.py   script Blender qui construit la vidéo de présentation
+│   └── creer_video_ia.py      script Blender qui construit la vidéo sur l'IA
 ├── .mcp.json                  connexion entre Claude Code et Blender
 └── .gitignore                 fichiers que Git ignore (sauvegardes de Blender…)
 ```

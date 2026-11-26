@@ -4,6 +4,8 @@
 
 **Pourquoi c'est réaliste :** le micro:bit V2 de Tartaruga sait déjà faire tourner un petit modèle d'apprentissage automatique. Il en a la puissance de calcul et l'accéléromètre. Pour les pistes 2 et 4, il n'y a **rien à acheter** ; la piste 1 demande un micro:bit de plus par groupe.
 
+🎬 **[Vidéo : Tartaruga apprend, les 4 activités en 66 secondes](../videos/tartaruga_ia.mp4)**
+
 **Date du relevé :** novembre 2026. Les points marqués *à vérifier* doivent être testés sur le prototype.
 
 ---
