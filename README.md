@@ -26,6 +26,8 @@ Le kit doit permettre aux enseignants de proposer des activités de découverte 
 ## Documents
 
 - [Questions de recherche pour le Réseau Canopé](docs/questions-recherche-canope.md)
+- [Veille : cartes électroniques](docs/veille-cartes-electroniques.md)
+- [Tartaruga : robot tortue imprimable en 3D](modeles-3d/README.md)
 
 ## Modélisation 3D (Blender)
 
