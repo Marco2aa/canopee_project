@@ -13,6 +13,7 @@ Robot inspiré de la **tortue d'Hermann**, une espèce emblématique de Corse. I
 ## Ce qui le rend ludique
 
 - **Elle dessine.** Un feutre se place au centre, entre les deux roues. La tortue trace ses déplacements comme la tortue du langage Logo : carré, triangle, étoile… C'est de la géométrie de cycle 3 et 4.
+- **Elle lève son stylo.** Un petit servomoteur soulève le feutre : la tortue peut se déplacer sans tracer, pour dessiner des figures séparées, des lettres ou des pointillés.
 - **Elle a un visage.** Une fenêtre à l'avant laisse voir les LED du micro:bit, qui affichent des émotions ou des flèches.
 - **On change sa carapace.** La carapace tient par des aimants et s'enlève sans outil. Le couvercle est plat, donc les élèves peuvent dessiner le leur, par exemple dans Tinkercad.
 - **On voit l'intérieur.** En enlevant la carapace, on découvre les moteurs, les piles et la carte.
@@ -26,6 +27,8 @@ Les fichiers STL sont déjà orientés pour l'impression. Toutes les pièces tie
 | `tartaruga_chassis.stl` | 99 × 180 × 44 | posé sur sa face plate (le dessus du châssis) | non |
 | `tartaruga_carapace.stl` | 105 × 180 × 56 | posée sur son bord | non (pente de 50° au plus) |
 | `tartaruga_couvercle.stl` | 81 × 130 × 6,5 | face gravée contre le plateau | non |
+| `tartaruga_support_leve_stylo.stl` | 56 × 38,5 × 15 | posé sur sa base | non |
+| `tartaruga_bague_feutre.stl` | 23 × 40 × 8 | posée à plat | non |
 
 **Réglages conseillés :** PLA ou PETG, buse de 0,4 mm, couches de 0,2 mm, 3 périmètres, remplissage de 20 %. Pour le châssis, 4 périmètres rendent les berceaux moteurs plus solides.
 
@@ -36,12 +39,15 @@ Les fichiers STL sont déjà orientés pour l'impression. Toutes les pièces tie
 | Composant | Quantité |
 |---|---|
 | BBC micro:bit V2 | 1 |
-| Carte d'extension robot pour micro:bit (pilote 2 moteurs, avec extension MakeCode ou Vittascience) | 1 |
+| Carte d'extension robot pour micro:bit (pilote 2 moteurs **et au moins 1 sortie servo**, avec extension MakeCode ou Vittascience) | 1 |
 | Moteur TT jaune avec réducteur, et sa roue de 65 mm | 2 |
+| Micro-servomoteur SG90 avec palonnier simple | 1 |
 | Bloc 4 piles AA (format 2 × 2, environ 63 × 58 × 16 mm) | 1 |
 | Aimants néodyme 6 × 3 mm | 12 (6 dans le châssis, 6 dans la carapace) |
-| Vis M3 × 8 et entretoises nylon M3 × 8 | 4 pour la carte, 2 pour les piles |
-| Vis M3 × 10 pour serrer le feutre | 1 |
+| Vis M3 × 8 et entretoises nylon M3 × 8 | 4, pour la carte |
+| Vis M3 × 16 et écrous M3 | 2, qui tiennent à la fois le bloc de piles et le support du servo |
+| Vis M2 auto-taraudeuses (livrées avec le SG90) | 2, pour le servo |
+| Vis M3 × 6 pour serrer la bague sur le feutre | 1 |
 | Colliers de serrage, 3 mm de large | 4 (2 par moteur) |
 | Feutre, 12 mm de diamètre au plus | 1 |
 
@@ -54,15 +60,17 @@ Estimation faite en novembre 2026, à partir de prix relevés en ligne, TTC. **L
 | micro:bit V2 (prix en pack de 10) | 20 € | 20 € |
 | Carte d'extension moteur | 15 € (Kitronik) | 8 € (générique) |
 | 2 moteurs TT avec roues de 65 mm | 11 € | 5 € |
+| Micro-servomoteur SG90 (lève-stylo) | 3 € | 2 € |
 | Boîtier 4 piles AA et 4 piles alcalines | 4,50 € | 3 € |
 | 12 aimants néodyme 6 × 3 mm | 1,50 € | 1 € |
 | Vis, entretoises, colliers | 1,20 € | 0,70 € |
 | Feutre | 1 € | 0,50 € |
-| Filament PLA (≈ 125 g à 20 €/kg) | 2,50 € | 2,50 € |
-| **Total par robot** | **≈ 57 €** | **≈ 41 €** |
+| Filament PLA (≈ 135 g à 20 €/kg) | 2,70 € | 2,70 € |
+| **Total par robot** | **≈ 60 €** | **≈ 43 €** |
 
 **D'où viennent les chiffres :**
-- **Filament :** les 3 pièces font 135 cm³ si elles étaient pleines (mesuré dans Blender). Avec 20 % de remplissage et des parois fines, il faut compter environ 110 à 130 g de PLA.
+- **Filament :** le châssis, la carapace et le couvercle font 135 cm³ s'ils étaient pleins (mesuré dans Blender). Avec 20 % de remplissage et des parois fines, il faut compter environ 110 à 130 g de PLA, plus une dizaine de grammes pour le support du servo et la bague.
+- **Servomoteur SG90 :** prix courant estimé, pas encore relevé chez un revendeur.
 - **Temps d'impression :** environ 8 h par robot. C'est une estimation, à confirmer avec le logiciel d'impression (le « slicer »).
 
 **Ce qui n'est pas compté :**
@@ -84,11 +92,15 @@ Estimation faite en novembre 2026, à partir de prix relevés en ligne, TTC. **L
 ## Montage
 
 1. Glissez chaque moteur dans son berceau, sous le châssis, et serrez-le avec 2 colliers passés dans les fentes.
-2. Vissez le bloc de piles sous l'arrière du châssis (2 vis M3) et faites passer les fils par la fente.
-3. Fixez la carte d'extension sur le dessus avec 4 entretoises M3, puis insérez le micro:bit, LED vers l'avant.
-4. Collez les aimants dans le châssis et dans les pattes de la carapace. **Vérifiez les pôles** : chaque paire doit s'attirer.
-5. Posez la carapace, puis le couvercle.
-6. Glissez le feutre par le haut, jusqu'à ce que la pointe touche le papier, et bloquez-le avec la vis M3 latérale.
+2. Placez le bloc de piles sous l'arrière du châssis et le support du servo au-dessus, puis serrez l'ensemble avec 2 vis M3 × 16 et leurs écrous. Faites passer les fils des piles par la fente.
+3. Couchez le servo SG90 sur son support, axe tourné vers le tube du feutre, et vissez ses pattes sur les deux poteaux (vis M2). Mettez le palonnier simple, bras dirigé vers l'avant.
+4. Fixez la carte d'extension sur le dessus avec 4 entretoises M3, puis insérez le micro:bit, LED vers l'avant. Branchez les moteurs et le servo sur la carte.
+5. Collez les aimants dans le châssis et dans les pattes de la carapace. **Vérifiez les pôles** : chaque paire doit s'attirer.
+6. Glissez le feutre par le haut, à travers le tube, jusqu'à ce que la pointe touche le papier. Il doit coulisser librement.
+7. Enfilez la bague sur le feutre, languette tournée vers le servo. Mettez le servo en position « stylo baissé » (bras à l'horizontale), placez la languette juste au-dessus du bras, puis serrez la vis M3 de la bague.
+8. Posez la carapace, puis le couvercle.
+
+**Lever et baisser le stylo :** dans MakeCode ou Vittascience, faites tourner le servo d'environ 25° pour lever le feutre de 6 mm environ, puis revenez à la position de départ pour le baisser. Les angles exacts sont à régler à l'essai.
 
 ## À vérifier avant d'imprimer
 
@@ -96,6 +108,7 @@ Ces cotes viennent de valeurs courantes. **Mesurez vos composants au pied à cou
 
 - **Moteur TT :** 70 × 22,5 × 19 mm, axe à 11 mm du bout.
 - **Entraxe des trous de la carte d'extension :** 58 × 40 mm, valeur provisoire à adapter à la carte choisie.
-- **Bloc de piles :** 63 × 58 × 16 mm.
-- **Diamètre du feutre :** le trou fait 13 mm.
+- **Bloc de piles :** 63 × 58 × 16 mm, avec 2 trous de fixation à 44 mm l'un de l'autre. Si les trous de votre bloc sont ailleurs, percez-les dans le bloc pour qu'ils tombent en face de ceux du châssis.
+- **Servo SG90 :** corps de 22,5 × 12,2 × 22,7 mm, pattes de 32,2 mm de long, trous de fixation à 27,8 mm l'un de l'autre.
+- **Diamètre du feutre :** le tube fait 13 mm, la bague 12,4 mm. Le feutre doit coulisser dans le tube mais être serré par la bague.
 - **Jeu d'impression :** 0,4 mm. Réduisez-le si les pièces flottent, augmentez-le si elles forcent.

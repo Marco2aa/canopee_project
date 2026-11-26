@@ -20,7 +20,7 @@
 
 **Ce qu'on retient :**
 - Les robots les plus simples (Blue-Bot) s'adressent aux plus jeunes. Pour le CM2 et la 5e, ce sont plutôt **mBot, Thymio ou les robots micro:bit** qui conviennent.
-- Les robots micro:bit du commerce (Maqueen, Cutebot) coûtent environ **70 € une fois le micro:bit ajouté**. C'est assez proche de la version « de marque » de Tartaruga (≈ 57 €) : **l'avantage de prix de Tartaruga est réel mais modeste** face à eux. Il est beaucoup plus net face au Blue-Bot, au Thymio ou au mBot2.
+- Les robots micro:bit du commerce (Maqueen, Cutebot) coûtent environ **70 € une fois le micro:bit ajouté**. C'est assez proche de la version « de marque » de Tartaruga (≈ 60 € avec le lève-stylo) : **l'avantage de prix de Tartaruga est réel mais modeste** face à eux. Il est beaucoup plus net face au Blue-Bot, au Thymio ou au mBot2.
 - Aucun de ces robots ne se **répare en imprimant une pièce** : une coque cassée oblige à racheter la pièce chez le fabricant, ou le robot entier.
 
 ---
@@ -38,7 +38,7 @@ L'idée d'un robot qui trace des figures avec un feutre **n'est pas nouvelle**. 
 
 **Ce qu'on retient :**
 - Ces projets utilisent surtout Arduino ou des cartes à programmer en texte. **Aucun n'est pensé pour le micro:bit et la programmation par blocs** utilisée du CM2 à la 5e.
-- La plupart des tortues Logo ont un **lève-stylo** (un petit servomoteur qui lève et baisse le feutre). Cela permet de se déplacer sans tracer. **Tartaruga n'en a pas encore** : c'est une amélioration à prévoir (voir partie 5).
+- La plupart des tortues Logo ont un **lève-stylo** (un petit servomoteur qui lève et baisse le feutre). Cela permet de se déplacer sans tracer. **Il a été ajouté à Tartaruga** après cette veille (voir partie 5).
 
 ---
 
@@ -63,7 +63,7 @@ L'idée d'un robot qui trace des figures avec un feutre **n'est pas nouvelle**. 
 
 | Critère | Blue-Bot | Thymio | mBot2 | Robot micro:bit du commerce | Tortue libre (OSTR) | **Tartaruga** |
 |---|---|---|---|---|---|---|
-| Prix par robot | ≈ 120-140 € | ≈ 100 € et plus | ≈ 155 € | ≈ 70 € | faible (à chiffrer) | **≈ 41 à 57 €** |
+| Prix par robot | ≈ 120-140 € | ≈ 100 € et plus | ≈ 155 € | ≈ 70 € | faible (à chiffrer) | **≈ 43 à 60 €** |
 | Adapté du CM2 à la 5e | non | oui | oui | oui | moyen | **oui** |
 | Blocs de style Scratch | non | oui | oui | oui | non | **oui** (MakeCode, Vittascience) |
 | Aucun logiciel à installer | oui | non | non | oui | non | **oui** |
@@ -87,7 +87,7 @@ L'idée d'un robot qui trace des figures avec un feutre **n'est pas nouvelle**. 
 
 ## 5. Pistes d'amélioration tirées de la veille
 
-1. **Ajouter un lève-stylo** avec un micro-servomoteur (environ 2 €), comme sur les tortues Logo. Les élèves pourraient alors dessiner des figures séparées, des lettres ou des pointillés.
+1. ~~Ajouter un lève-stylo~~ **Fait.** Un micro-servomoteur SG90 (environ 2 à 3 €) soulève le feutre, comme sur les tortues Logo. Voir le [README de Tartaruga](../modeles-3d/README.md).
 2. **Étudier les fichiers d'OSTR** pour comparer : fixation du feutre, précision des déplacements, type de moteurs.
 3. **Vérifier la précision des moteurs TT** : ils sont moins précis que des moteurs pas à pas. Une étoile peut mal se refermer. Il faudra tester, et prévoir un réglage dans le programme (calibrage des virages).
 4. **Prévoir une passerelle avec le mBot2**, déjà connu en Corse : des fiches d'activités proches, pour que les enseignants s'y retrouvent.
